@@ -56,12 +56,11 @@ window.addEventListener("click", function (event) {
   </div>`;
 
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
-
     }
 
     // сброс счетчика
     card.querySelector("[data-counter]").innerText = "1";
-    
+
     // отображение статуса корзины (пустая/полная)
     toggleCartStatus();
 
