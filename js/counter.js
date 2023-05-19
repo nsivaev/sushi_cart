@@ -16,6 +16,8 @@ window.addEventListener("click", function (event) {
   // проверка на товар внутри корзины
   if (event.target.closest(".cart-wrapper") && counter.innerText === "1") {
     event.target.closest(".cart-item").remove();
+
+    toggleCartStatus();
   }
 
   if (event.target.dataset.action === "minus") {
