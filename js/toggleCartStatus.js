@@ -4,6 +4,7 @@ function toggleCartStatus() {
   const orderForm = document.querySelector("#order-form");
   const totalSumEl = document.querySelector(".total-sum");
 
+  // Скрываю блоки
   if (cartWrapper.children.length > 0) {
     cartEmptyBage.classList.add("none");
 

@@ -23,7 +23,7 @@ window.addEventListener("click", function (event) {
       counterEl.innerText =
         parseInt(counterEl.innerText) + parseInt(productInfo.counter);
     } else {
-      // если товара нет в корзине
+      // Если товара нет в корзине
 
       const cartItemHTML = `
   <div class="cart-item" data-id="${productInfo.id}">
@@ -58,13 +58,13 @@ window.addEventListener("click", function (event) {
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
     }
 
-    // сброс счетчика
+    // Сброс счетчика
     card.querySelector("[data-counter]").innerText = "1";
 
-    // отображение статуса корзины (пустая/полная)
+    // Отображение статуса корзины (пустая/полная)
     toggleCartStatus();
 
-    // общая стоимость товаров в корзине
+    // Общая стоимость товаров в корзине
     calcCartPriceAndDelivery();
   }
 });

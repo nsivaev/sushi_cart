@@ -16,9 +16,6 @@ function calcCartPriceAndDelivery() {
     totalPrice += currentPrice;
   });
 
-  // цена на странице
-  // totalPriceEl.innerText = totalPrice + " ₽";
-
   if (totalPrice > 0) {
     cartDelivery.classList.remove("none");
   } else {
@@ -31,7 +28,7 @@ function calcCartPriceAndDelivery() {
 
     deliveryFree.classList.add("none");
 
-    // итоговая сумма без доставки
+    // Итоговая сумма без доставки
     totalPriceEl.innerText = totalPrice + " ₽";
   } else {
     deliveryCost.classList.remove("free");
@@ -39,7 +36,7 @@ function calcCartPriceAndDelivery() {
 
     deliveryFree.classList.remove("none");
 
-    // итоговая сумма с доставкой
+    // Итоговая сумма с доставкой
     totalPriceEl.innerText = totalPrice + deliveryPrice + " ₽";
   }
 }
