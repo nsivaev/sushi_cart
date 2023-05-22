@@ -2,7 +2,7 @@
 https://nsivaev.github.io/sushi_cart/
 <img width="1440" alt="Screenshot 2023-05-22 at 11 46 11" src="https://github.com/nsivaev/sushi_cart/assets/101824119/e1b1257f-3909-4579-8eb7-23ee274ef020">
 ---
-## Данный pet-project был нужен для ознакомления с javascript.
+### Данный pet-project был нужен для ознакомления с javascript.
 
 #### Что было реализовано:
   1. Счетчики для всех товаров
