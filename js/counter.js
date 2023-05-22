@@ -22,8 +22,6 @@ window.addEventListener("click", function (event) {
       event.target.closest(".cart-wrapper") &&
       parseInt(counter.innerText) === 1
     ) {
-      // Проверка на товар который находится в корзине
-      console.log("IN CART!!!!");
       // Удаляем товар из корзины
       event.target.closest(".cart-item").remove();
 
@@ -31,7 +29,7 @@ window.addEventListener("click", function (event) {
       toggleCartStatus();
 
       // Пересчет общей стоимости товаров в корзине
-      calcCartPrice();
+      calcCartPriceAndDelivery();
     }
   }
 
@@ -41,6 +39,6 @@ window.addEventListener("click", function (event) {
     event.target.closest(".cart-wrapper")
   ) {
     // Пересчет общей стоимости товаров в корзине
-    calcCartPrice();
+    calcCartPriceAndDelivery();
   }
 });

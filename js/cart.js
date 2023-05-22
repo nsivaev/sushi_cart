@@ -65,6 +65,6 @@ window.addEventListener("click", function (event) {
     toggleCartStatus();
 
     // общая стоимость товаров в корзине
-    calcCartPrice();
+    calcCartPriceAndDelivery();
   }
 });
